@@ -8,9 +8,7 @@ pipeline {
     stages {
         stage('Checking node version') {
            steps {
-               sh '''
-               apt install nodejs -y
-               node -v'''
+               sh 'node -v'
            }
         }
         stage('Installing the Modules') {
