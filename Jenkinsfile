@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    tools {
-        nodejs 'mynode'
-    }
     environment {
     repoName='thori22/angular'
     imageName="${repoName}:${BUILD_NUMBER}"
